@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор Венедиктов Глеб P3170</title>
+
+	<link href="style.css" rel="stylesheet">
+
+	<!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="cs.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<table>
+			<tr>
+				<td colspan="4">
+					<div class="input_wr"><input id="inp" type="number" value="0" disabled></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="btn number" id="n7" onclick="number_click(7);">7</div>
+				</td>
+				<td>
+					<div class="btn number" id="n8" onclick="number_click(8);">8</div>
+				</td>
+				<td>
+					<div class="btn number" id="n9" onclick="number_click(9);">9</div>
+				</td>
+				<td>
+					<div class="btn action" id="a0" onclick="action('a0');">+</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="btn number" id="n4" onclick="number_click(4);">4</div>
+				</td>
+				<td>
+					<div class="btn number" id="n5" onclick="number_click(5);">5</div>
+				</td>
+				<td>
+					<div class="btn number" id="n6" onclick="number_click(6);">6</div>
+				</td>
+				<td>
+					<div class="btn action" id="a1" onclick="action('a1');">-</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="btn number" id="n1" onclick="number_click(1);">1</div>
+				</td>
+				<td>
+					<div class="btn number" id="n2" onclick="number_click(2);">2</div>
+				</td>
+				<td>
+					<div class="btn number" id="n3" onclick="number_click(3);">3</div>
+				</td>
+				<td>
+					<div class="btn action" id="a2" onclick="action('a2');">*</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="btn action" id="a5" onclick="clear_input();">C</div>
+				</td>
+				<td>
+					<div class="btn number" id="n0" onclick="number_click(0);">0</div>
+				</td>
+				<td>
+					<div class="btn action" id="a4" onclick="del_last();"><</div>
+				</td>
+				<td>
+					<div class="btn action" id="a3" onclick="action('a3');">/</div>
+				</td>
+			</tr>
+			<tr>
+				<!-- <td></td>
+				<td></td>
+				<td></td> -->
+				<td colspan="4">
+					<div class="btn action result" id="a6" onclick="result();">=</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>			
